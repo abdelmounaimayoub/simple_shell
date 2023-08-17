@@ -34,8 +34,8 @@ info->argv[0] = _strdup(info->arg);
 info->argv[1] = NULL;
 }
 }
-for (i = 0; info->argv && info=>argv[i]; i++)
-	    ;
+for (i = 0; info - > argv && info = > argv[i]; i++)
+;
 info ->argc = i;
 
 replace_aliace(info);
