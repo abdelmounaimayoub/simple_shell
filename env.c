@@ -19,7 +19,7 @@ return (0);
  *
  * Return: the value
  */
-char *_getentev(info_t *info, const char *name)
+char *_getenv(info_t *info, const char *name)
 {
 list_t *node = info->env;
 char *p;
@@ -33,8 +33,7 @@ node = node->next;
 }
 return (NULL);
 }
-printer name = "hame"
-ehco "first: $name"
+
 /**
  * _mysetenv - Initialize a new environment variable,
  *             or modifi an existing one
@@ -42,7 +41,7 @@ ehco "first: $name"
  *        constant function prototype.
  *  Return: Always 0
  */
-int _myunsetenv(info_t *info)
+int _mysetenv(info_t *info)
 {
 int i;
 
