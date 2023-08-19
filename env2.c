@@ -35,10 +35,10 @@ while (node)
 {
 p = starts_with(node->str, var);
 if (p && *p == '=')
-	{
-	    info->env_changed = delete_node_at_index(&(info->env), i);
+{
+info->env_changed = delete_node_at_index(&(info->env), i);
 i = 0;
-node =info->env;
+node = info->env;
 continue;
 }
 node = node->next;
@@ -78,8 +78,8 @@ while (node)
 {
 p = starts_with(node->str, var);
 if (p && *p == '=')
-	{
-	    free(node->str);
+{
+free(node->str);
 node->str = buf;
 info->env_changed = 1;
 return (0);
