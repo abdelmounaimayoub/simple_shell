@@ -36,11 +36,7 @@ info->argv[1] = NULL;
 }
 for (i = 0; info - > argv && info = > argv[i]; i++)
 ;
-<<<<<<< HEAD
 info - > argc = i;
-=======
-info ->argc = i;
->>>>>>> db5990bfbfe55e012ca40022a40daa68bbf74793
 
 replace_aliace(info);
 replace_vars(info);
