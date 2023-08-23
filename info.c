@@ -27,7 +27,7 @@ if (info->arg)
 info->argv = strtow(info->arg, " \t");
 if (!info->argv)
 {
-info->agrv = malloc(sizeof(char *) * 2);
+info->argv = malloc(sizeof(char *) * 2);
 if (info->argv)
 {
 info->argv[0] = _strdup(info->arg);
@@ -48,7 +48,7 @@ replace_vars(info);
  * @info: struct address
  * @all: true if freeing all fields
  */
-void free_info(into_t *info, int all)
+void free_info(info_t *info, int all)
 {
 ffree(info->argv);
 info->argv = NULL;
