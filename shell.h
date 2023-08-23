@@ -189,8 +189,8 @@ void sigintHandler(int);
 
 /* info.c module */
 void clear_info(info_t *);
-int _myunsetenv(info_t *);
-int populate_env_list(info_t *);
+void set_info(info_t *, char **);
+void free_info(info_t *, int);
 
 /* env.c module */
 char *_getenv(info_t *, const char *);
